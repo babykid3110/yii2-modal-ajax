@@ -253,7 +253,7 @@ class ModalAjax extends Widget
                     ajaxSubmit: $this->ajaxSubmit
                 });
                 
-                jQuery('#$id').modal('toggle');
+                //jQuery('#$id').modal('toggle');
             });
         ");
     }
