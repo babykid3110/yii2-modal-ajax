@@ -151,7 +151,7 @@ class ModalAjax extends Widget
         }
 
         $this->modalWidgetConfig = ArrayHelper::merge([
-            'class' => $this->_isBs5() ? 'yii\bootstrap5\Modal' : 'yii\bootstrap\Modal',
+            'class' => $this->_isBs5() ? 'yii\bootstrap5\Modal' : 'yii\bootstrap4\Modal',
             'id' => $this->getId(false),
             'headerOptions' => $this->headerOptions,
             'bodyOptions' => $this->bodyOptions,
@@ -171,7 +171,7 @@ class ModalAjax extends Widget
             ], $this->modalWidgetConfig);
         } else {
             $this->modalWidgetConfig = ArrayHelper::merge([
-                'header' => Html::tag('span', $this->header, ['class' => 'modal-title']),
+                'title' => Html::tag('span', $this->header, ['class' => 'modal-title']),
             ], $this->modalWidgetConfig);
         }
 
